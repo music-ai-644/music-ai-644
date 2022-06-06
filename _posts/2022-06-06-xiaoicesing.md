@@ -16,7 +16,7 @@ date: 2022-06-06
 last_modified_at: 2022-06-06
 ---
 
-# XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System
+<!-- # XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System -->
 
 - Date: June 11, 2020
 - Paper: https://arxiv.org/abs/2006.06261 

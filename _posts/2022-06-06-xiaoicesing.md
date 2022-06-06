@@ -75,6 +75,7 @@ FastSpeech의 주요 아키텍처를 따르면서 singing에 특화된 디자인
 - Speech에 비해 Singing은 F0 contour가 더 복잡하고 민감하다 → data augmentation으로 해결할 수 있지만 경제적이지 않고 훈련 시간이 길어질 수 있다. 따라서, 그림 1과 같이 input과 output pitch 사이의 residual connection을 제안 (logF0 사용)
 - F0 예측에 V/UV decision을 수반
 - Decoder의 loss $L_{dec}=L_{spec}+w_{f}*L_f+w_u*L_u$
+
 ---
 ## **Experiment**
 ### Datasets

@@ -50,12 +50,12 @@ FastSpeech의 주요 아키텍처를 따르면서 singing에 특화된 디자인
 ---
 ## **Architecture**
     
-![architecture.png](../_figure/xiaoicesing/architecture.png)
+![architecture.png](/_figure/xiaoicesing/architecture.png)
     
 ### **Musical score encoder**
 - 일반적으로 musical score는 lyrics, note pitch, note duration을 포함하며, Singing에 필수적.
             
-![input.png](../_figure/xiaoicesing/input.png)
+![input.png](/_figure/xiaoicesing/input.png)
 
 1) lyrics → phoneme ID    
 2) note pitch → pitch ID (MIDI standard)

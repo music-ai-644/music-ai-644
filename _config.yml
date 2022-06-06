@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Music AI 644"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : 
-  location         : "12, Daewangpangyo-ro 644beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea"
+  bio              :
+  location         : "12, Daewangpangyo-ro 644beon-gil, \\ Bundang-gu, Seongnam-si, Gyeonggi-do, \\ Republic of Korea"
   email            : "nc.music.ai.644@gmail.com"
   links:
     - label: "Email"

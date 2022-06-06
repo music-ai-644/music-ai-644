@@ -1,26 +1,10 @@
----
-title:  "XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System"
-excerpt: "md 파일에 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드 해보자. 에디터는 Visual Studio code 사용! 로컬 서버에서 확인도 해보자. "
+# #19 XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System
 
-categories:
-  - SVS
-tags:
-  - [SVS, SVC, Style, Vocoder]
-
-classes: wide
-
-toc: true
-toc_sticky: true
- 
-date: 2022-06-06
-last_modified_at: 2022-06-06
----
-
-# XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System
-
-- Date: June 11, 2020
-- Paper: https://arxiv.org/abs/2006.06261 
-- Sample: https://xiaoicesing.github.io/
+Date: June 11, 2020
+Paper: https://arxiv.org/abs/2006.06261
+Sample: https://xiaoicesing.github.io/
+Tags: SingingVoiceSynthesis
+생성날짜: March 21, 2021 6:22 PM
 
 # Abstract
 
@@ -49,12 +33,12 @@ FastSpeech의 주요 아키텍처를 따르면서 singing에 특화된 디자인
         4. Mel-spectrogram보다 mel-generalized cepstrum (MGC)와 band aperiodicity (BAP)를 포함한 vocoder feature를 모델링하고 WORLD vocoder를 사용하여 singing voice를 합성.
 - **Architecture**
     
-    ![architecture.png](../_figure/xiaoicesing/architecture.png)
+    ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/architecture.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/architecture.png)
     
     - **Musical score encoder**
         1. 일반적으로 musical score는 lyrics, note pitch, note duration을 포함하며, Singing에 필수적.
             
-            ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/input.png](../_figure/xiaoicesing/input.png)
+            ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/input.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/input.png)
             
             1) lyrics → phoneme ID
             
@@ -95,9 +79,9 @@ FastSpeech의 주요 아키텍처를 따르면서 singing에 특화된 디자인
         9. Batch size는 32개의 문장이며, 40K iterations
     - **Overall performance**
         
-        ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval1.png](../_figure/xiaoicesing/eval1.png)
+        ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval1.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval1.png)
         
-        ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval2.png](../_figure/xiaoicesing/eval2.png)
+        ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval2.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval2.png)
         
         XiaoiceSing은 발음 정확도, 음질, 자연성 모두 baseline을 능가합니다. 
         
@@ -105,20 +89,20 @@ FastSpeech의 주요 아키텍처를 따르면서 singing에 특화된 디자인
         
         또한, MGC 계수의 average global variance와 plot을 보았을때, 고주파 성분에서 보다 견고하고 뚜렷함을 알 수 있음.
         
-        ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval3.png](../_figure/xiaoicesing/eval3.png)
+        ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval3.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval3.png)
         
     - **Evaluation on F0 modeling**
         1. F0 contour의 correctness와 dynamics를 평가하기 위해 A/B 테스트를 수행
         2. 97.3%의 XiaoiceSing가 1.7%의 Baseline을 압도.
         3. 두 시스템은 note의 pitch를 정확하게 표현할 수 있지만, LSTM 모델에서 예측한 F0는 over-smoothed되고 비브라토와 같은 F0 contour의 dynamics를 표현할 수 없음. XiaoiceSing은 recorfing에 훨씬 더 가까움.
             
-            ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval4.png](../_figure/xiaoicesing/eval4.png)
+            ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval4.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval4.png)
             
     - **Evaluation on duration modeling**
         1. XiaoiceSing이 84.3%로 14.3%의 baseline을 압도
         2. 그림 7에서는 XiaoiceSing이 recording에 더 가깝게 예측하는 것을 알 수 있음.
             
-            ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval5.png](../_figure/xiaoicesing/eval5.png)
+            ![#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval5.png](#19%20XiaoiceSing%20A%20High-Quality%20and%20Integrated%20Sing%20e92b703a8e0d4bc8a27fdc19f51f87b7/eval5.png)
             
         
 - **Conclusion**

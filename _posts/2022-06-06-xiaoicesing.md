@@ -7,6 +7,8 @@ categories:
 tags:
   - [SVS, SVC, Style, Vocoder]
 
+classes: wide
+
 toc: true
 toc_sticky: true
  

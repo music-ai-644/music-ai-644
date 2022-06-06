@@ -1,6 +1,6 @@
 ---
 title:  "XiaoiceSing: A High-Quality and Integrated Singing Voice Synthesis System"
-excerpt: "md 파일에 마크다운 문법으로 작성하여 Github 원격 저장소에 업로드 해보자. 에디터는 Visual Studio code 사용! 로컬 서버에서 확인도 해보자. "
+excerpt: "spectrum, F0, duration 모델링을 위한 통합 네트워크를 사용하는 high-quality singing voice synthesis 시스템"
 
 categories:
   - SVS
